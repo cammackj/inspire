@@ -4,8 +4,9 @@ var router = express.Router()
 var mongoose = require('mongoose')
 
 var todoSchema = new mongoose.Schema({
-	task: { type: String, required: true },
-	counter: { type: Number, default: 0}
+  task: { type: String, required: true },
+  // taskStatus: {type: Boolean, required: true, default: false},
+	taskCount: { type: Number, default: 0}
 })
 
 var Todos = mongoose.model('Todo', todoSchema)

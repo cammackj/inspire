@@ -7,19 +7,26 @@
 </head>
 
 <body id="body">
-	<div id="weather">
-		Your Weather Template
-	</div>
+	<div class="container-fluid" >
+		<div id="weather">
+			Your Weather Template
+		</div>
 
-	<div id="quote">
-		The Quote
-	</div>
+		<div id="quote">
+			The Quote
+		</div>
 
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
-	</div>
+		<div class="container" id="todo">
+			<h3>Todo List</h3>
+			<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+				<input type="text" name="todoList" placeholder="Enter Task">
+				<button type="submit">add task</button>
+			</form>
+			<div id="list">
 
+			</div>
+		</div>
+	</div>
 
 
 
