@@ -1,8 +1,9 @@
-function QuoteController(){
+function QuoteController() {
 
-	// TODO: CHANGE ALL VARIABLES TO QC
 	var quoteService = new QuoteService()
-	function drawImage(quote) {
+	var quote =	quoteService.getQuote(drawQuote)
+	console.log(quote)
+	function drawQuote(quote) {
 		var template = ''
 		var quoteElem = document.getElementById('quote')
 		template += `
@@ -10,8 +11,4 @@ function QuoteController(){
                 `
 		quoteElem.innerHTML = template
 	}
-	quoteService.getQuote(function(quote){
-		console.log('What is the quote', quote)
-		quoteService.getQuote(drawQuote)
-	})
 }
