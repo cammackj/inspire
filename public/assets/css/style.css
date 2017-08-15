@@ -1,7 +1,39 @@
- .myrow {
-    margin: auto
-} 
 .time-section{
     border: 1px solid #31A93E;
-    text-align: center
+    text-align: center;
+    font-size: 100px;
+    background-color: #31A93E;
+    color: white;
+    position: center;
 }
+.weather-section{
+    border: 1px solid #31A93E;
+    background-color: #249c31;
+    padding: 0px;
+    width: 200px;
+    height: 125px;
+    text-align: center;
+    margin: 5px;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+h3{
+    color: white;
+}
+dl{
+    background-color: #31A93E;
+    color: white;
+}
+#todoList{
+    margin-top: 250px;
+    background-color: #31A93E;
+}
+#quote{
+    background-color: #31A93E;
+    margin-top: 250px;
+}
+/* #weather:before {
+    content: "\00b0"
+} */
