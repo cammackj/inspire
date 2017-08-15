@@ -34,6 +34,6 @@ dl{
     background-color: #31A93E;
     margin-top: 250px;
 }
-/* #weather:before {
-    content: "\00b0"
-} */
+blockquote{
+    color: white;
+}
