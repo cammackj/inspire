@@ -7,9 +7,7 @@ function WeatherService() {
 		$.get(apiUrl, function (res) {
 			res = JSON.parse(res)
 			localStorage.setItem('weather', JSON.stringify(res))
-			// HEY FUN FACT 
-			// Have you ever wanted to know the temperature measured in kelvin?
-			// You should probably convert the temperature data
+			res.main.temp = (res.main.temp *  9/5 - 459.67).toFixed(0)
 			callWhenDone(res);
 		})
 	}
